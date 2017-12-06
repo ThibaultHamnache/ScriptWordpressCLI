@@ -95,7 +95,7 @@ function reset {
 #----------------------
 function setup {
     echo "Vérification des paquets requis et installation de ceux manquants"
-    sudo apt-get install -Y mysql-server apache2 php7.0 php7.0-mysql libapache2-mod-php7.0
+    sudo apt-get install -y mysql-server apache2 php7.0 php7.0-mysql libapache2-mod-php7.0
     sudo a2enmod rewrite
     #TODO : Add SQL query to create the wordpress database
     cd /var/www/html/
